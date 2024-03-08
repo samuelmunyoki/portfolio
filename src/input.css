@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.darkModeEnabled {
+  background-color: rgb(14, 14, 14);
+  color: white;
+}
+#sun {
+  display: none;
+}
+@font-face{
+     font-family: LabilGrotesk;
+    src: url("../font/LabilGrotesk.ttf")
+
+}
+body {
+  font-family: 'LabilGrotesk', Fallback, sans-serif;
+  font-size: 100%;
+}

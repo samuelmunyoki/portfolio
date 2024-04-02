@@ -1,3 +1,2 @@
-FROM busybox:latest
-COPY ./site /www
-CMD ["httpd", "-f", "-h", "/www", "-r", "/www/index.html"]
+FROM caddy:latest
+COPY ./site /srv

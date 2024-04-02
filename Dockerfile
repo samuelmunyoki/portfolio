@@ -1,5 +1,3 @@
-# Use the official Nginx image as the base image
-FROM nginx:latest
+FROM httpd:2.4
+COPY ./site/ /usr/local/apache2/htdocs/
 
-# Copy the contents of the 'site' directory to the Nginx html directory
-COPY ./site /usr/share/nginx/html

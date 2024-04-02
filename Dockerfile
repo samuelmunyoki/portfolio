@@ -1,2 +1,3 @@
-FROM caddy:latest
-COPY ./site /srv
+FROM caddy:alpine
+COPY ./site/ /srv/
+COPY ./Caddyfile /etc/caddy/Caddyfile
